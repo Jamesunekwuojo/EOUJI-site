@@ -1,0 +1,15 @@
+form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+} 
+#headdiv{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+
+}
