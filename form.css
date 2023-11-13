@@ -2,6 +2,8 @@ form {
     display: flex;
     align-content: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 } 
 #headdiv{
     display: flex;
@@ -9,7 +11,9 @@ form {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 
+}
 
+button{
+    border-radius: 10px;
 }
