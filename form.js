@@ -1,7 +1,7 @@
 const Getext1 = document.getElementById("h1");
 const textoType1 = "Welcome to EOUJI Rentals Platform"
 const Getext2 = document.getElementById("textanime2");
-const textoType2 = "Please fill in the form below to continue"
+const textoType2 = "Please fill in the form to continue"
 let index = 0;
 
 
