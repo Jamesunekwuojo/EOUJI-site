@@ -6,13 +6,17 @@ let index = 0;
 
 
 function autoType(){
-    if (index < textoType1.length && index < textoType2.length){
+    if (index < textoType1.length){
         Getext1.innerHTML+= textoType1.charAt(index);
+        
+    }
+    if (index < textoType2.length){
         Getext2.innerHTML+= textoType2.charAt(index);
-        index++;
-        setTimeout(autoType, 100)
 
     }
+    index++;
+
+    setTimeout(autoType, 100)
 }
 
 autoType();

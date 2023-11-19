@@ -11,6 +11,8 @@
 
 button{
     border-radius: 10px;
+    padding: 5px;
+    margin-left: 150px;
 }
 
 .mainformDiv{
@@ -21,7 +23,8 @@ button{
     border: 1px solid black;
     height: 80vh;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    background-color:#faebd7;
 }
 
 input, label{
