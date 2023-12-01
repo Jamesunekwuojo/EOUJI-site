@@ -27,10 +27,11 @@ button{
     height: 80vh;
     border-radius: 10px;
     margin-bottom: 20px;
-    background-color:#faebd7;
+    background-color:pink;
+    /* #faebd7; */
 }
 
-input, label{
+input, label, select{
     display: block;
     margin: 15px;
     padding: 5px;
@@ -39,10 +40,13 @@ input, label{
 }
 
 .bodyanimation{
-    background: linear-gradient(blue, wheat);
+    background-color: #4169e1;
 }
 
 html, body {
     margin: 0;
     
+}
+#textanime2, #h1 {
+    color: black;
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EOUJIform</title>
     <link rel="stylesheet" href="./form.css">
 </head>
 <body>
@@ -22,8 +22,29 @@
 
           <label for="">Email Adderress:</label>
           <input type="email" required>
+          
+
+          <label for="Items">Choose Items/Products to Rent:</label>
+          <input list="Items">
+          <datalist id="Items">
+            <option value="Canopy"></option>
+            <option value="Chairs"></option>
+            <option value="Transport Service"></option>
+            <option value="Others"></option>
+          </datalist>
+          
+
+          <!-- <select name="Items" id="Items">
+            <option selected disabled hidden value=""></option>
+            <option value="">Chairs</option>
+            <option value="">Transport Service</option>
+            <option value="">Canopy</option>
+          </select> -->
+
+          
+
           <button type="submit">Submit Form</button>
-  
+          
       </form>
   
   
