@@ -28,7 +28,7 @@ function tocheckItems(){
     let Itemspresent=false;
 
     for(var i=0; i<options.length; i++){
-        if (Itemsinput== options[i]){
+        if (Itemsinput.value== options[i].value){
             Itemspresent = true;
             break;
 
