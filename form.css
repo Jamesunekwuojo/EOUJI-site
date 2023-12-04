@@ -1,5 +1,5 @@
 
-#headdiv{
+/* #headdiv{
     display: flex;
     align-content: center;
     justify-content: center;
@@ -7,7 +7,7 @@
     flex-direction: column;
 
 
-}
+} */
 
 button{
     border-radius: 10px;
@@ -16,17 +16,20 @@ button{
     color: wheat;
     background-color: blue;
     cursor: pointer;
+    margin-bottom: 1rem;
 }
 
 .mainformDiv{
-    position: relative;
+    
     display: flex;
     flex-direction: column;
     width: 60vh;
     border: 1px solid black;
-    height: 80vh;
+    height: fit-content;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
     background-color:pink;
     /* #faebd7; */
 }
@@ -35,18 +38,31 @@ input, label, select{
     display: block;
     margin: 15px;
     padding: 5px;
+    margin-bottom: 1rem;
     width: 90%;
     
 }
 
 .bodyanimation{
     background-color: #4169e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: visible;
 }
 
 html, body {
     margin: 0;
+    padding: 0;
     
 }
 #textanime2, #h1 {
     color: black;
+}
+
+div.bottomtext {
+    float: right;
+    margin-right: 2rem;
+
 }

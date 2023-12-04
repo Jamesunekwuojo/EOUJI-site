@@ -19,6 +19,32 @@ function autoType(){
     setTimeout(autoType, 100)
 }
 
-
-
 autoType();
+
+function tocheckItems(){
+    
+    const Itemsinput = document.getElementById("ItemsInput");
+    const  options = document.getElementById("Items").options;
+    let Itemspresent=false;
+
+    for(var i=0; i<options.length; i++){
+        if (Itemsinput== options[i]){
+            Itemspresent = true;
+            break;
+
+        }
+
+    }
+
+    if (!Itemspresent){
+        Itemsinput.setCustomValidity("Sorry! Items/Product not available");
+    } else{
+        Itemsinput.setCustomValidity("");
+    }
+
+    
+
+}
+
+
+

@@ -11,12 +11,16 @@
     <div id="headdiv">
       <h1 id="h1">  </h1>
       <p id="textanime2"></p>
-
+    </div>
       <div class="mainformDiv">
         <form action="https://formsubmit.co/unekwuojoabah4@gmail.com" method="post">
+
           <!-- <input type="hidden" name="_captcha" value="false"> -->
+
           <input type="hidden" name="_subject" value="CUSTOMER FORM!">
+
           <input type="hidden" name="_autoresponse" value="Thanks For Choosing EOUJI rentals. Congrats your form has beign received! ">
+
           <label for="">Name:</label>
           <input type="text" placeholder="Customers' Name:" required>
 
@@ -25,13 +29,35 @@
           
 
           <label for="Items">Choose Items/Products to Rent:</label>
-          <input list="Items">
+          <input list="Items" id="ItemsInput" oninput="tocheckItems()" multiple>
           <datalist id="Items">
-            <option value="Canopy"></option>
-            <option value="Chairs"></option>
-            <option value="Transport Service"></option>
-            <option value="Others"></option>
+            <option value="Canopy">
+            <option value="Chairs">
+            <option value="Transport Service">
+            <option value="Canopies & chairs">
+            <option value="Canopies ,chairs & Transport service">
+            <option value="Gardening tools">
+
           </datalist>
+
+          <label for="canopy"> For Canopies:</label>
+          <input  placeholder=" Type  number/numbers of Canopies to Rent  ">
+          <input list="typeofcanopy" placeholder=" Choose the type of canopy you want to rent ">
+          <datalist id="typeofcanopy">
+            <option value="All Big Canopies ">
+            <option value="2 Big and 1 Couple Canopies">
+            <option value="3 Big and 1 Couple Canopies">
+            <option value="Others/Specify ">
+            
+          </datalist>
+          <label for="chairs">For Chairs:</label>
+          <input type="text" placeholder="Type the number of chairs you want" id="chairp">
+
+          <div class="bottomtext">
+            <p>Terms & Conditions for Renting</p>
+          </div>
+ 
+ 
           
 
           <!-- <select name="Items" id="Items">
@@ -48,7 +74,7 @@
       </form>
   
   
-      </div>
+    
     
   </div>
     
