@@ -54,12 +54,13 @@ input, label, select{
 }
 
 .bodyanimation{
-    background-color: #4169e1;
+    /* background-color: #4169e1; */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 120vh;
     overflow: visible;
+    background:linear-gradient(pink, #4169e1);
 }
 
 html, body {
@@ -117,16 +118,18 @@ div.bottomtext {
         width: 85%;
         overflow:scroll;
         
+        
     }
     
     .bodyanimation{
-        background-color: #4169e1;
+        /* background-color: #4169e1; */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100%;
         overflow-y: scroll;
+        background:linear-gradient(pink, #4169e1);
     }
     
     html, body {
