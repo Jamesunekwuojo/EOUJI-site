@@ -29,7 +29,7 @@
           
 
           <label for="Items">Choose Items/Products to Rent:</label>
-          <input list="Items" id="ItemsInput" oninput="tocheckItems()" multiple>
+          <input list="Items" id="ItemsInput" oninput="tocheckItems()">
           <datalist id="Items">
             <option value="Canopy">
             <option value="Chairs">
@@ -41,7 +41,7 @@
           </datalist>
 
           <label for="canopy"> For Canopies:</label>
-          <input  placeholder=" Type  number/numbers of Canopies to Rent  ">
+          <input  placeholder=" Type  number/numbers of Canopies to Rent  " required>
           <input list="typeofcanopy" placeholder=" Choose the type of canopy you want to rent ">
           <datalist id="typeofcanopy">
             <option value="All Big Canopies ">
@@ -51,11 +51,12 @@
             
           </datalist>
           <label for="chairs">For Chairs:</label>
-          <input type="text" placeholder="Type the number of chairs you want" id="chairp">
+          <input type="text" placeholder="Type the number of chairs you want" id="chairp" required>
 
           <div class="bottomtext">
             <p>Terms & Conditions for Renting</p>
           </div>
+          
  
  
           
@@ -69,15 +70,17 @@
 
           
 
+          <!-- <button type="submit">Submit Form</button> -->
           <button type="submit">Submit Form</button>
-          
       </form>
-  
-  
-    
-    
+
+      
+        
   </div>
-    
-    <script src="./form.js"></script>
+  
+
+  
+
+  <script src="./form.js"></script>
 </body>
 </html>

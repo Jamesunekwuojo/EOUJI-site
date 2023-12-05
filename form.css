@@ -12,22 +12,31 @@
 button{
     border-radius: 10px;
     padding: 5px;
-    margin-left: 150px;
+    margin-left:7rem ;
     color: wheat;
     background-color: blue;
     cursor: pointer;
     margin-bottom: 1rem;
+    width: fit-content;
 }
+/* .buttondiv{
+    position:absolute;
+    align-items: center;
+    justify-content: center;
+    top: 104vh;
+    left: 120vh;
+
+} */
 
 .mainformDiv{
     
     display: flex;
     flex-direction: column;
-    width: 60vh;
+    width: 55vh;
     border: 1px solid black;
     height: fit-content;
     border-radius: 10px;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
     margin-left: 0.5rem;
     margin-bottom: 0.5rem;
     background-color:pink;
@@ -36,10 +45,11 @@ button{
 
 input, label, select{
     display: block;
-    margin: 15px;
-    padding: 5px;
-    margin-bottom: 1rem;
-    width: 90%;
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 85%;
     
 }
 
@@ -48,7 +58,7 @@ input, label, select{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
     overflow: visible;
 }
 
@@ -66,3 +76,74 @@ div.bottomtext {
     margin-right: 2rem;
 
 }
+
+
+/* styles for mobile devices*/
+@media (max-width:768px) {
+    button{
+        position: relative;
+        border-radius: 10px;
+        padding: 5px;
+        margin-left: 35%;
+        color: wheat;
+        background-color: blue;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+    
+    .mainformDiv{
+        
+        display: flex;
+        flex-direction: column;
+        width: 40vh;
+        border: 1px solid black;
+        height: fit-content;
+        border-radius: 10px;
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        margin-bottom: 0.5rem;
+        background:linear-gradient(pink, #4169e1);
+        
+        /* #faebd7; */
+    }
+    
+    input, label, select{
+        position: relative;
+        display: block;
+        margin-left: 10px;
+        padding: 6px;
+        /* margin-right: 10px; */
+        margin-top: 5px;
+        width: 85%;
+        overflow:scroll;
+        
+    }
+    
+    .bodyanimation{
+        background-color: #4169e1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        overflow-y: scroll;
+    }
+    
+    html, body {
+        margin: 0;
+        padding: 0;
+        
+    }
+    #textanime2, #h1 {
+        color: black;
+        margin-left: 1rem;
+    }
+    
+    div.bottomtext {
+        float: right;
+        margin-right: 2rem;
+    
+    }
+
+}
+
