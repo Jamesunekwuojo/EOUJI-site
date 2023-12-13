@@ -1,13 +1,13 @@
 
-/* #headdiv{
-    display: flex;
+#headdiv{
+    /* display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
+    min-width: 500px;
 
-
-} */
+}
 
 button{
     border-radius: 10px;
@@ -30,9 +30,8 @@ button{
 
 .mainformDiv{
     
-    display: flex;
-    flex-direction: column;
-    width: 55vh;
+ 
+    width: 25vw; 
     border: 1px solid black;
     height: fit-content;
     border-radius: 10px;
@@ -58,8 +57,7 @@ input, label, select{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120vh;
-    overflow: visible;
+    height: 100vh;
     background:linear-gradient(pink, #4169e1);
 }
 
@@ -81,6 +79,9 @@ div.bottomtext {
 
 /* styles for mobile devices*/
 @media (max-width:768px) {
+    #headdiv{
+        min-width: 310px;
+    }
     button{
         position: relative;
         border-radius: 10px;
@@ -96,7 +97,7 @@ div.bottomtext {
         
         display: flex;
         flex-direction: column;
-        width: 40vh;
+        width: 60vw;
         border: 1px solid black;
         height: fit-content;
         border-radius: 10px;
@@ -149,4 +150,43 @@ div.bottomtext {
     }
 
 }
+
+@media (min-width:769px) and (max-width:1024px){
+    #headdiv{
+        min-width: 507px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainformDiv{
+        
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+        border: 1px solid black;
+        height: fit-content;
+        border-radius: 10px;
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        margin-bottom: 0.5rem;
+        background:linear-gradient( #4169e1,pink);
+        
+        /* #faebd7; */
+    }
+
+    .bodyanimation{
+        /* background-color: #4169e1; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-y: scroll;
+        height: 100%;
+        background:linear-gradient(pink, #4169e1);
+    }
+
+}
+
+
+
 
