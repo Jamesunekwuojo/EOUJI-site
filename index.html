@@ -21,18 +21,16 @@
 
           <input type="hidden" name="_autoresponse" value="Thanks For Choosing EOUJI rentals. Congrats your form has beign received! ">
 
-          <label for="">Name:</label>
+          <label for="name">Name:</label>
           <input type="text" placeholder="Customers' Name:" required name="name>
 
-          <label>Email Adderress:</label>
-          <input type="email" required name="email">
 
-          <label for="">Email Adderress</label>
+          <label for="email">Email Adderress:</label>
           <input type="email" name="email" required>
           
 
           <label for="Items">Choose Items/Products to Rent:</label>
-          <input list="Items" id="ItemsInput" oninput="tocheckItems()">
+          <input list="Items" id="ItemsInput" oninput="tocheckItems()" name="Products">
           <datalist id="Items">
             <option value="Canopy">
             <option value="Chairs">
@@ -54,7 +52,7 @@
             
           </datalist>
           <label for="chairs">For Chairs:</label>
-          <input type="text" placeholder="Type the number of chairs you want" id="chairp" required>
+          <input type="text" placeholder="Type the number of chairs you want" id="chairp" required name="Chairs no">
 
           <div class="bottomtext">
             <p>Terms & Conditions</p>
