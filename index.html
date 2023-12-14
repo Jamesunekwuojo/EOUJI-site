@@ -22,10 +22,13 @@
           <input type="hidden" name="_autoresponse" value="Thanks For Choosing EOUJI rentals. Congrats your form has beign received! ">
 
           <label for="">Name:</label>
-          <input type="text" placeholder="Customers' Name:" required>
+          <input type="text" placeholder="Customers' Name:" required name="name>
 
-          <label for="">Email Adderress:</label>
-          <input type="email" required>
+          <label>Email Adderress:</label>
+          <input type="email" required name="email">
+
+          <label for="">Email Adderress</label>
+          <input type="email" name="email" required>
           
 
           <label for="Items">Choose Items/Products to Rent:</label>
@@ -41,7 +44,7 @@
           </datalist>
 
           <label for="canopy"> For Canopies:</label>
-          <input  placeholder=" Type  number/numbers of Canopies to Rent  " required>
+          <input  placeholder=" Type  number/numbers of Canopies to Rent  " required name="canopy">
           <input list="typeofcanopy" placeholder=" Choose the type of canopy you want to rent ">
           <datalist id="typeofcanopy">
             <option value="All Big Canopies ">
