@@ -3,85 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EOUJIform</title>
+    <title>Rentals form</title>
     <link rel="stylesheet" href="./form.css">
 </head>
 <body>
-  <div class="bodyanimation">
-    <div id="headdiv">
-      <h1 id="h1">  </h1>
-      <p id="textanime2"></p>
-    </div>
-      <div class="mainformDiv">
-        <form action="https://formsubmit.co/unekwuojoabah4@gmail.com" method="post">
+    <div class="bodyanimation">
+        <div id="headdiv">
+            <h1 id="h1"></h1>
+            <p id="textanime2"></p>
 
-          <!-- <input type="hidden" name="_captcha" value="false"> -->
+        </div>
+        <div class="mainformDiv">
+            <form action="https://formsubmit.co/unekwuojoabah4@gmail.com" method="post">
+                <input type="hidden" name="_subject" value="CUSTOMER FORM!">
 
-          <input type="hidden" name="_subject" value="CUSTOMER FORM!">
+                <input type="hidden" name="_autoresponse" value="Thanks for Choosing EOUJI rentals. Congrats your form has beign received!">
 
-          <input type="hidden" name="_autoresponse" value="Thanks For Choosing EOUJI rentals. Congrats your form has beign received! ">
+                <label for="Name">Name:</label>
+                <input type="text" placeholder="Customers Name:" name="Name" required>
 
-          <label for="name">Name:</label>
-          <input type="text" placeholder="Customers' Name:" required name="name>
+                <label for="email">Email Adderress:</label>
+                <input type="email" name="email" required>
+
+                <label for="Items">Choose Items/Products to Rent:</label>
+                <input list="Items" name="Products" id="ItemsInput" oninput="tocheckItems()">
 
 
-          <label for="email">Email Adderress:</label>
-          <input type="email" name="email" required>
-          
-
-          <label for="Items">Choose Items/Products to Rent:</label>
-          <input list="Items" id="ItemsInput" oninput="tocheckItems()" name="Products">
-          <datalist id="Items">
-            <option value="Canopy">
-            <option value="Chairs">
-            <option value="Transport Service">
-            <option value="Canopies & chairs">
-            <option value="Canopies ,chairs & Transport service">
-            <option value="Gardening tools">
-
-          </datalist>
-
-          <label for="canopy"> For Canopies:</label>
-          <input  placeholder=" Type  number/numbers of Canopies to Rent  " required name="canopy">
-          <input list="typeofcanopy" placeholder=" Choose the type of canopy you want to rent ">
-          <datalist id="typeofcanopy">
-            <option value="All Big Canopies ">
-            <option value="2 Big and 1 Couple Canopies">
-            <option value="3 Big and 1 Couple Canopies">
-            <option value="Others/Specify ">
-            
-          </datalist>
-          <label for="chairs">For Chairs:</label>
-          <input type="text" placeholder="Type the number of chairs you want" id="chairp" required name="Chairs no">
-
-          <div class="bottomtext">
-            <p>Terms & Conditions</p>
-          </div>
-          
- 
- 
-          
-
-          <!-- <select name="Items" id="Items">
-            <option selected disabled hidden value=""></option>
-            <option value="">Chairs</option>
-            <option value="">Transport Service</option>
-            <option value="">Canopy</option>
-          </select> -->
-
-          
-
-          <!-- <button type="submit">Submit Form</button> -->
-          <button type="submit" >Submit Form</button>
-      </form>
-
-      
+                <datalist id="Items">
+                    <option value="Canopy">
+                    <option value="Chairs">
+                    <option value="Transport Service">
+                    <option value="Canopies & chairs">
+                    <option value="Canopies ,chairs & Transport service">
+                    <option value="Gardening tools">
         
-  </div>
-  
+                  </datalist>
+        
+                  <label for="canopy"> For Canopies:</label>
+                  <input  placeholder=" Type  number/numbers of Canopies to Rent  " required name="canopy">
+                  <input list="typeofcanopy" placeholder=" Choose the type of canopy you want to rent ">
+                  <datalist id="typeofcanopy">
+                    <option value="All Big Canopies ">
+                    <option value="2 Big and 1 Couple Canopies">
+                    <option value="3 Big and 1 Couple Canopies">
+                    <option value="Others/Specify ">
+                    
+                  </datalist>
+                  <label for="chairs">For Chairs:</label>
+                  <input type="text" placeholder="Type the number of chairs you want" id="chairp" required name="Chairs no">
 
-  
 
-  <script src="./form.js"></script>
+                  <div class="bottomtext">
+                    <p>Terms & Conditions</p>
+                  </div>
+                  
+                  <button type="submit" >Submit Form</button>
+        
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="./form.js"></script>
 </body>
 </html>
