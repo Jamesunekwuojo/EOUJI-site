@@ -52,7 +52,7 @@ function autoTypeText2() {
     index2++;
     setTimeout(autoTypeText2, 100); // Typing speed for textoType2
   }else{
-    setTimeout(re_type2, 1000);
+    setTimeout(re_type2, 900);
   }
 
   function re_type2 (){
@@ -74,7 +74,7 @@ function tocheckItems(){
     let Itemspresent=false;
 
     for(var i=0; i<options.length; i++){
-        if (Itemsinput.value== options[i].value){
+        if (Itemsinput.value === options[i].value){
             Itemspresent = true;
             break;
 
@@ -91,6 +91,12 @@ function tocheckItems(){
     
 
 }
+
+const itemsInput = document.getElementById("canopy_type");
+itemsInput.addEventListener("touchstart", () => {
+  // Open dropdown menu on touch
+});
+
 
 
 

@@ -105,6 +105,7 @@ div.bottomtext {
         margin-left: 0.5rem;
         margin-bottom: 0.5rem;
         background:linear-gradient( #4169e1,pink);
+        overflow-y: scroll;
         
         /* #faebd7; */
     }
@@ -112,12 +113,14 @@ div.bottomtext {
     input, label, select{
         position: relative;
         display: block;
-        margin-left: 10px;
-        padding: 6px;
+        margin-left: 5px;
+        margin-right: 20px;
+        padding: 20px;
         /* margin-right: 10px; */
         margin-top: 5px;
-        width: 85%;
-        overflow:scroll;
+        width: 70%;
+        overflow-y: scroll;
+        
         
         
     }
